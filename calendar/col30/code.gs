@@ -1,4 +1,19 @@
+/**
+* DOCUMENT CREATED BY JULIAN R. FIGUEROA
+* about.me/julianrfigueroa
+* This work is under a Creative 
+* Commons License Atribution-ShareAlike 
+* 3.0 Unported. CC-BY-SA
+*/
+/**
+* Cambia colores independientemente deacuerdo a un
+* código inicial.
+*/
 function manageColors(calendarId) {
+  // CalendarAppExtended es una clase de una lib externa cuya documentación y manual es el siguiente:
+  // https://sites.google.com/site/scriptsexamples/new-connectors-to-google-services/calendar
+  // Lo tuve que usar porque en el momento de crear el presente no estaba la funcionalidad de
+  // cambiarle el color a eventos individualmente sino a un calendario completo
   var cal = CalendarAppExtended.getCalendarById("kuu19cijr6rmb2jhr3mn442ivc@group.calendar.google.com");
   var events = cal.getEvents(new Date('09/01/2013'), new Date('09/06/2013'));
   for(var i in events){
