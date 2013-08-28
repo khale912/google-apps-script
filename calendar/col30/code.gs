@@ -14,7 +14,7 @@ function manageColors(calendarId) {
   // https://sites.google.com/site/scriptsexamples/new-connectors-to-google-services/calendar
   // Lo tuve que usar porque en el momento de crear el presente no estaba la funcionalidad de
   // cambiarle el color a eventos individualmente sino a un calendario completo
-  var cal = CalendarAppExtended.getCalendarById("kuu19cijr6rmb2jhr3mn442ivc@group.calendar.google.com");
+  var cal = CalendarAppExtended.getCalendarById("EL_ID_DE_SU_COPIA_PROPIA_DEL_CALENDARIO");
   var events = cal.getEvents(new Date('09/01/2013'), new Date('09/06/2013'));
   for(var i in events){
     if(events[i].getTitle().indexOf("[AE]") == 0){ //Actividades Especiales
